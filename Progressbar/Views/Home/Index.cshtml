@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/APIJavaScript.js"></script>
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/BarWindow.css" rel="stylesheet" />
+
+<div class="jumbotron">
+    
+    <div>
+        <input type="button" id="btnopen" value="Upload"/>
+    </div>
+
+</div>
+
+<div id="Fade_area" class="overlay"></div>
+
+<div id="myModal" class="popup">
+
+     @Html.Partial("~/Views/Shared/popup.cshtml")
+
+</div>
